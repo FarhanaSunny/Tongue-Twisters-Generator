@@ -97,21 +97,34 @@ const tongueTwister = [
   },
 ];
 
+// document.body.onload = getTwisterElement;
+
+// function getTwisterElement(twisterText) {
+//   const newDiv = document.createElement('div');
+//   const newContent = document.createTextNode(twisterText);
+//   newDiv.appendChild(newContent);
+//   return newDiv;
+// }
+
+// const divs = tongueTwister.map((obj) => {
+//     return getTwisterElement(obj.text)
+// });
+// const currentDiv= document.getElementById("twister-list");
+
+// divs.forEach((single) => currentDiv.appendChild(single));
+
 document.body.onload = getTwisterElement;
 
-function getTwisterElement(twisterText) {
-  const newDiv = document.createElement('div');
-  const newContent = document.createTextNode(twisterText);
-  newDiv.appendChild(newContent);
-  return newDiv;
+function getTwisterElement() {
+  const currentDiv = document.getElementById("twister-list");
+
+  tongueTwister.forEach((obj) => {
+    const newDiv = document.createElement('div');
+    const newContent = document.createTextNode(obj.text);
+    newDiv.appendChild(newContent);
+    currentDiv.appendChild(newDiv);
+  });
 }
-
-const divs = tongueTwister.map((obj) => {
-    return getTwisterElement(obj.text)
-});
-const currentDiv= document.getElementById("twister-list");
-
-divs.forEach((single) => currentDiv.appendChild(single));
 // let playButton = document.getElementById("play-button");
 // function playMusic() {
 //     let audio = new Audio("practice-audio.mp3");
