@@ -110,28 +110,4 @@ const texts = [
 
     
  
-    // Add more languages, categories, and texts as needed
-];
-
-function generateText() {
-    const selectedLanguage = document.getElementById("language").value;
-    const selectedCategory = document.getElementById("category").value;
-    
-    const languageObject = texts.find(obj => obj.language === selectedLanguage && obj.category === selectedCategory);
-    
-    if (languageObject) {
-        const randomIndex = Math.floor(Math.random() * languageObject.text.length);
-        const generatedText = languageObject.text[randomIndex];
-        document.getElementById("generatedText").innerText = generatedText;
-    } else {
-        document.getElementById("generatedText").innerText = "Language or category not supported.";
-    }
-}
-
-function changeLanguage() {
-    generateText();
-}
-
-function changeCategory() {
-    generateText();
-}
+    // Add more languages and texts as needed
