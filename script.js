@@ -1,4 +1,4 @@
-const texts = [
+const tongueTwister = [
   {
     language: "en",
     difficulty: "easy",
@@ -96,3 +96,19 @@ const texts = [
     text: "La cavale aux Valaques avala l'eau du lac et l'eau du lac lava la cavale au Valaques",
   },
 ];
+
+document.body.onload = getTwisterElement;
+
+function getTwisterElement(twisterText) {
+  const newDiv = document.createElement('div');
+  const newContent = document.createTextNode(twisterText);
+  newDiv.appendChild(newContent);
+  return newDiv;
+}
+
+const divs = tongueTwister.map((obj) => {
+    return getTwisterElement(obj.text)
+});
+const currentDiv= document.getElementById("twister-list");
+
+divs.forEach((single) => currentDiv.appendChild(single));
