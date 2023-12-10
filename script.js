@@ -112,9 +112,15 @@ const divs = tongueTwister.map((obj) => {
 const currentDiv= document.getElementById("twister-list");
 
 divs.forEach((single) => currentDiv.appendChild(single));
-let playButton = document.getElementById("play-button");
+// let playButton = document.getElementById("play-button");
+// function playMusic() {
+//     let audio = new Audio("practice-audio.mp3");
+//         audio.play()
+// }
+// playButton.addEventListener("click", playMusic);
+let audio = new Audio("practice-audio.mp3");
 function playMusic() {
-    let audio = new Audio("practice-audio.mp3");
-        audio.play()
+    audio.play();
 }
+let playButton = document.getElementById("play-button");
 playButton.addEventListener("click", playMusic);
