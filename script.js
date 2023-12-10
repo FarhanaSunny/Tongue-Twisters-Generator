@@ -113,7 +113,7 @@ const tongueTwister = [
     text: "La cavale aux Valaques avala l'eau du lac et l'eau du lac lava la cavale au Valaques",
     audio: "tongue-twister audio/french/la cavale.mp3",
   },
-];
+]
 
 // document.body.onload = getTwisterElement;
 
