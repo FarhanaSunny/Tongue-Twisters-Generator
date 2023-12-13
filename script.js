@@ -131,6 +131,7 @@ const tongueTwister = [
 
 // divs.forEach((single) => currentDiv.appendChild(single));
 
+
 document.body.onload = getTwisterElement;
 
 function getTwisterElement() {
@@ -154,8 +155,11 @@ function getTwisterElement() {
     newDiv.appendChild(difficultyElement);
     
     const buttonElement= document.createElement('button');
-    buttonElement.classList.add("audioStyle");
-    buttonElement.classList.add("svg-container");
+    const imgElement = document.createElement('img');
+    imgElement.src = './play_icon.png';
+    // buttonElement.classList.add("audioStyle");
+    buttonElement.appendChild(imgElement);
+    // buttonElement.classList.add("svg-container");
     buttonElement.addEventListener("click", () => playMusic(obj.audio));
 
     newDiv.appendChild(buttonElement);
