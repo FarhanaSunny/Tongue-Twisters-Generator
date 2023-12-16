@@ -113,31 +113,27 @@ const tongueTwister = [
     text: "La cavale aux Valaques avala l'eau du lac et l'eau du lac lava la cavale au Valaques",
     audio: "audio/french/la cavale.mp3",
   },
-]
+];
+const selectLanguage = document.getElementById("filterlanguageDropdown");
+const selectDifficulty = document.getElementById("filterdifficultyDropdown");
+selectLanguage.addEventListener('change', updateTwisterList);
+selectDifficulty.addEventListener('change', updateTwisterList);
 
-// document.body.onload = getTwisterElement;
+function updateTwisterList() {
+  const selectedLanguage = selectLanguage.value;
+  const selectedDifficulty = selectDifficulty.value;
+  getTwisterElement(selectedLanguage, selectedDifficulty);
+}
+function getTwisterElement(language,difficulty) {
 
-// function getTwisterElement(twisterText) {
-//   const newDiv = document.createElement('div');
-//   const newContent = document.createTextNode(twisterText);
-//   newDiv.appendChild(newContent);
-//   return newDiv;
-// }
-
-// const divs = tongueTwister.map((obj) => {
-//     return getTwisterElement(obj.text)
-// });
-// const currentDiv= document.getElementById("twister-list");
-
-// divs.forEach((single) => currentDiv.appendChild(single));
-
-
-document.body.onload = getTwisterElement;
-
-function getTwisterElement() {
+  const filteredTwisters = tongueTwister.filter(single => {
+    return single.language === language && single.difficulty === difficulty ;
+  });
   const currentDiv = document.getElementById("twister-list");
 
-  tongueTwister.forEach((obj) => {
+    currentDiv.innerHTML = "";
+
+  filteredTwisters.forEach((obj) => {
     const newDiv = document.createElement('div');
 
     const textElement = document.createElement('p');
@@ -157,18 +153,11 @@ function getTwisterElement() {
     const buttonElement= document.createElement('button');
     const imgElement = document.createElement('img');
     imgElement.src = './play_icon.png';
-    // buttonElement.classList.add("audioStyle");
     buttonElement.appendChild(imgElement);
-    // buttonElement.classList.add("svg-container");
     buttonElement.addEventListener("click", () => playMusic(obj.audio));
 
     newDiv.appendChild(buttonElement);
 
-    // const audioObj = new Audio(obj.audio);
-    // buttonElement.addEventListener("click", playMusic);
-
-    // const newContent = document.createTextNode(obj.text);
-    // newDiv.appendChild(newContent);
     currentDiv.appendChild(newDiv);
   });
 }
@@ -177,16 +166,4 @@ function playMusic(audioPath) {
   const audio = new Audio(audioPath);
   audio.play();
 }
-// let playButton = document.getElementById("audioElement");
-// let playButton = document.getElementById("play-button");
-// function playMusic() {
-//     let audio = new Audio("practice-audio.mp3");
-//         audio.play()
-// }
-// playButton.addEventListener("click", playMusic);
-// let audio = new Audio("practice-audio.mp3");
-// function playMusic() {
-//     audio.play();
-// }
-// let playButton = document.getElementById("play-button");
-// playButton.addEventListener("click", playMusic);
+
