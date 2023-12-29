@@ -126,8 +126,12 @@ function updateTwisterList() {
 }
 function getTwisterElement(language,difficulty) {
 
-  const filteredTwisters = tongueTwister.filter(single => {
-    return single.language === language && single.difficulty === difficulty ;
+  // 
+  const filteredTwisters = tongueTwister.filter((single) => {
+    return (
+      (single.language === language || language === "all") &&
+      (single.difficulty === difficulty || difficulty === "all")
+    );
   });
   const currentDiv = document.getElementById("twister-list");
 
