@@ -3,7 +3,6 @@
       scroll-behavior: smooth;
     }
 }
-
 body {
     background: #f5f6f7;
     color: #454569;
@@ -37,15 +36,17 @@ header {
    padding-top: 80px;
    max-width: 100%;
    height: auto;
-
 }
-nav {
+.nav-list {
+    display: flex;
+    align-items: center; 
     width: 50%;
     max-width: 300px;
     height: 50px;
-    padding-left: 40%;
-} 
-nav > ul {
+    margin-left: auto; 
+    margin-right: auto; 
+}
+.nav-list > ul {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -54,14 +55,14 @@ nav > ul {
     margin-block: 0;
     height: 100%;
   }
-  nav > ul > li {
+.nav-list > ul > li {
     color: #e1e2df;
     margin: 0 0.2rem;
     padding: 0.2rem;
     display: block;
   }
   
-  nav > ul > li:hover {
+.nav-list > ul > li:hover {
     background-color: #dfdfe2;
     color: #8888a5;
     cursor: pointer;
@@ -76,6 +77,8 @@ h2 {
 }
 main {
     padding-top: 5px;
+    max-width: 300px;
+    margin: 0 auto;
   }
   .about-the-app {
     padding-bottom: 100px;
