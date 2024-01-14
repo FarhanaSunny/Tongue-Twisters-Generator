@@ -125,8 +125,6 @@ function updateTwisterList() {
   getTwisterElement(selectedLanguage, selectedDifficulty);
 }
 function getTwisterElement(language,difficulty) {
-
-  // 
   const filteredTwisters = tongueTwister.filter((single) => {
     return (
       (single.language === language || language === "all") &&
@@ -136,9 +134,11 @@ function getTwisterElement(language,difficulty) {
   const currentDiv = document.getElementById("twister-list");
 
     currentDiv.innerHTML = "";
+    currentDiv.classList.add("twister-container"); 
 
   filteredTwisters.forEach((obj) => {
     const newDiv = document.createElement('div');
+    newDiv.classList.add("twister-box");
 
     const textElement = document.createElement('p');
     textElement.textContent = obj.text;
