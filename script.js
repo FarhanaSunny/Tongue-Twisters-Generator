@@ -114,6 +114,19 @@ const tongueTwister = [
     audio: "audio/french/la cavale.mp3",
   },
 ];
+
+const animatedText = "This app is called the 'Tongue Twister Generator.' I have a 5-year-old daughter who absolutely loves learning different tongue twisters in various languages. She enjoys googling tongue twisters and repeating them without considering if they are appropriate for her age or too challenging as a non-native speaker of those languages! This inspired me to create this app for her and anyone of any age to have fun—whether solo or in a group setting, taking turns! I hope you enjoy this Tongue Twister App as much as we do!";
+const animatedP = document.getElementById("self-intro");
+
+
+animatedText.split(" ").forEach((item, i) => {
+  const element = document.createElement("span");
+  // element.style.animationDelay = `${i * 0.2}s`; // Use "s" for seconds in animation-delay
+  element.style.animation = `fadeIn 2s cubic-bezier(0.42, 0, 0.58, 1) ${i * 0.1}s`;
+  element.textContent = item + " ";
+  animatedP.appendChild(element);
+});
+
 const selectLanguage = document.getElementById("filterlanguageDropdown");
 const selectDifficulty = document.getElementById("filterdifficultyDropdown");
 selectLanguage.addEventListener('change', updateTwisterList);
@@ -170,4 +183,3 @@ function playMusic(audioPath) {
   const audio = new Audio(audioPath);
   audio.play();
 }
-
