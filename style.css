@@ -51,6 +51,7 @@ header {
     width: 300px;
     height: 300px;
     overflow: hidden;
+    padding-left: 5rem;
     transition: transform 0.5s ease-in-out;
 }
 .background-img:hover {
@@ -59,10 +60,14 @@ header {
 
  .twister-img {
     width: 300px;
-    object-fit: cover;
-    padding-top: 150px;
+    /* object-fit: cover; */
+    display: flex;
+    position: relative;
+    padding-top: 180px;
+    padding-bottom: 30px;
     max-width: 100%;
     height: auto;
+    padding-left: 5rem;
  }
 .nav-list {
     display: flex;
@@ -106,6 +111,9 @@ main {
     padding-top: 5px;
     margin: 0 auto;
   }
+.introduction {
+  padding-left: 2rem;
+}
   .about-the-app {
     padding-bottom: 100px;
   }
@@ -141,6 +149,12 @@ main {
     max-width: 40ch;
     animation: fadeIn 0.5s ease-in-out;
   }
+  #self-intro span {
+    font-family: "Montserrat Medium";
+    display: center;
+    max-width: 40ch;
+    animation: fadeIn 0.5s ease-in-out;
+  }
   .twister-box {
     border: 2px solid #a178a6;
     border-radius: 20px;
@@ -165,4 +179,7 @@ main {
   }  
   .twister-container {
     position: relative;
+  }
+  .click {
+    padding-left: 5rem;
   }

@@ -8,4 +8,16 @@ animatedText.split(" ").forEach((item, i) => {
   element.style.animation = `fadeIn 2s cubic-bezier(0.42, 0, 0.58, 1) ${i * 0.1}s`;
   element.textContent = item + " ";
   animatedP.appendChild(element);
+//   animatedIntroP.appendChild(element);
 });
+
+const animatedIntro = "Hi, I am Farhana! I am an aspiring Software Developer. Originally, I am from Bangladesh, and I hold a bachelor's degree in dentistry. However, I am currently making a career transition to software development. I am enrolled in the 'GetCoding program,' and this project marks my first GetCoding endeavor.";
+const animatedIntroP = document.getElementById("self-intro");
+
+animatedIntro.split(" ").forEach((item, i) => {
+    const element = document.createElement("span");
+    // element.style.animationDelay = `${i * 0.2}s`; // Use "s" for seconds in animation-delay
+    element.style.animation = `fadeIn 2s cubic-bezier(0.42, 0, 0.58, 1) ${i * 0.1}s`;
+    element.textContent = item + " ";
+    animatedIntroP.appendChild(element);
+  });
