@@ -135,7 +135,7 @@ main {
     gap: 1rem;
 }
 
-  #self-intro span {
+  #app-info span {
     font-family: "Montserrat Medium";
     display: center;
     max-width: 40ch;
