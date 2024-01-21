@@ -51,7 +51,7 @@ header {
     width: 300px;
     height: 300px;
     overflow: hidden;
-    padding-left: 5rem;
+    padding-left: 7rem;
     transition: transform 0.5s ease-in-out;
 }
 .background-img:hover {
@@ -67,7 +67,7 @@ header {
     padding-bottom: 30px;
     max-width: 100%;
     height: auto;
-    padding-left: 5rem;
+    padding-left: 7rem;
  }
 .nav-list {
     display: flex;
@@ -173,9 +173,9 @@ main {
   }
   
   .twister-box button {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
+    display: flex;
+    position: relative;
+    bottom: 0;
   }  
   .twister-container {
     position: relative;
@@ -183,3 +183,6 @@ main {
   .click {
     padding-left: 5rem;
   }
+#intro-text{
+  font-family: "Montserrat Medium";
+}

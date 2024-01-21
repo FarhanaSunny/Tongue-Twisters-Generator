@@ -118,7 +118,7 @@ const selectLanguage = document.getElementById("filterlanguageDropdown");
 const selectDifficulty = document.getElementById("filterdifficultyDropdown");
 selectLanguage.addEventListener('change', updateTwisterList);
 selectDifficulty.addEventListener('change', updateTwisterList);
-
+updateTwisterList();
 function updateTwisterList() {
   const selectedLanguage = selectLanguage.value;
   const selectedDifficulty = selectDifficulty.value;
