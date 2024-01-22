@@ -3,6 +3,11 @@
       scroll-behavior: smooth;
     }
 }
+@media (max-width: 400px) {
+  .background-img {
+      max-width: 400px; /* Set to 100% on smaller screens */
+  }
+}
 @keyframes scale {
     100% {
       transform: scale(1);
@@ -38,20 +43,36 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: relative;
     top: 0;
     max-width: 100%;
     height:auto;
     z-index: 1;
 }  
+.twister-header {
+  color: #ffffff;
+}
+#filter-lang, #filter-diff{
+  color: #ffffff;
+}
+
 .background-img {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     width: 300px;
     height: 300px;
     overflow: hidden;
     padding-left: 7rem;
+    transition: transform 0.5s ease-in-out; */
+    max-width: 400px; /* Adjust the percentage based on your preference */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 2rem;
     transition: transform 0.5s ease-in-out;
 }
 .background-img:hover {
@@ -59,16 +80,22 @@ header {
 }
 
  .twister-img {
-    width: 300px;
+    /* width: 300px;
     /* object-fit: cover; */
-    display: flex;
+    /* display: flex;
     position: relative;
-    padding-top: 180px;
+    padding-top: 80px;
     padding-bottom: 30px;
     max-width: 100%;
     height: auto;
-    padding-left: 7rem;
- }
+    padding-left: 200px; */
+    max-width: 300px; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+ } 
 .nav-list {
     display: flex;
     align-items: center; 
@@ -135,6 +162,20 @@ main {
 }
 .container {
     padding-left: 100px;
+    background-color: #a178a6;
+    /* width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; */
+    display: flexbox;
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    top: 0;
+    max-width: 100%;
+    height:auto;
+    z-index: 1
 }
 .twister-list {
     padding-left: 8%;
@@ -173,9 +214,9 @@ main {
   }
   
   .twister-box button {
-    display: flex;
     position: relative;
     bottom: 0;
+
   }  
   .twister-container {
     position: relative;
