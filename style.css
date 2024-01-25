@@ -55,7 +55,6 @@ header {
 #filter-lang, #filter-diff{
   color: #ffffff;
 }
-
 .background-img {
     /* display: flex;
     align-items: center;
@@ -78,7 +77,6 @@ header {
 .background-img:hover {
     transform: scale(1.1);
 }
-
  .twister-img {
     /* width: 300px;
     /* object-fit: cover; */
@@ -142,24 +140,21 @@ main {
 .introduction {
   padding-left: 2rem;
 }
-  .about-the-app {
+.about-the-app {
     padding-bottom: 100px;
   }
-
-.languageStyle {
+.languageStyle, .difficultyStyle  {
     border-radius: 1rem;
-    color: white;
-    background-color: #fca5a5;
+    color: white; 
     padding: 0.25rem 0.5rem;
-    display: inline;
+    display: inline-block;
+    position: relative;
     }
-
 .difficultyStyle {
-    border-radius: 1rem;
-    color: white;
     background-color:#38bdf8;;
-    padding: 0.25rem 0.5rem;
-    display : inline-flex;
+}
+.languageStyle {
+  background-color: #fca5a5;
 }
 .container {
   padding-left: 100px;
@@ -167,10 +162,9 @@ main {
   /* width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  position: relative; */
-  display: flexbox;
+  align-items: center; */
   position: relative;
+  display: flexbox;
   padding-top: 1rem;
   padding-bottom: 2rem;
   top: 0;
@@ -178,28 +172,27 @@ main {
   height:auto;
   z-index: 1;
   font-size: large;
-
 }
 .twister-list {
     padding-left: 8%;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: .5rem;
+    /* gap: 1rem; */
 }
-
-  #app-info span {
+#app-info span {
     font-family: "Montserrat Medium";
     display: center;
     max-width: 40ch;
     animation: fadeIn 0.5s ease-in-out;
   }
-  #self-intro span {
+#self-intro span {
     font-family: "Montserrat Medium";
     display: center;
     max-width: 10ch;
     animation: fadeIn 0.5s ease-in-out;
   }
-  .twister-box {
+.twister-box {
     border: 2px solid #a178a6;
     border-radius: 20px;
     padding: 10px;
@@ -207,24 +200,23 @@ main {
     position: relative;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(71, 32, 76, 0.1);
-    width: 100px;
-
+    width: 150px;
+    margin: 0 auto;
   }
-  
-  .twister-box:hover {
+.twister-box:hover {
     background-color: #fef9c3;
     box-shadow: 0 8px 16px rgba(71, 32, 76, 0.2); 
   }
-  
-  .twister-box button {
+.twister-box button {
     position: relative;
     bottom: 0;
-
+    display: block;
+    margin-top: 2rem;
   }  
-  .twister-container {
+.twister-container {
     position: relative;
   }
-  .click {
+.click {
     margin: 0 auto;
     padding-left: 5rem;
   }
