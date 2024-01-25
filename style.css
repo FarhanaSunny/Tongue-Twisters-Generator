@@ -112,13 +112,14 @@ header {
     align-items: center;
     padding-inline-start: 0;
     margin-block: 0;
-    height: 100%;
+    height: 100px;
   }
 .nav-list > ul > li {
     color: #e1e2df;
     margin: 0 0.2rem;
     padding: 0.2rem;
     display: block;
+    font-size: large;
   }
 
 .nav-list > ul > li:hover {
@@ -161,21 +162,23 @@ main {
     display : inline-flex;
 }
 .container {
-    padding-left: 100px;
-    background-color: #a178a6;
-    /* width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative; */
-    display: flexbox;
-    position: relative;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    top: 0;
-    max-width: 100%;
-    height:auto;
-    z-index: 1
+  padding-left: 100px;
+  background-color: #a178a6;
+  /* width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; */
+  display: flexbox;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  top: 0;
+  max-width: 100%;
+  height:auto;
+  z-index: 1;
+  font-size: large;
+
 }
 .twister-list {
     padding-left: 8%;
@@ -193,7 +196,7 @@ main {
   #self-intro span {
     font-family: "Montserrat Medium";
     display: center;
-    max-width: 40ch;
+    max-width: 10ch;
     animation: fadeIn 0.5s ease-in-out;
   }
   .twister-box {
@@ -222,8 +225,14 @@ main {
     position: relative;
   }
   .click {
+    margin: 0 auto;
     padding-left: 5rem;
   }
 #intro-text{
   font-family: "Montserrat Medium";
+}
+.introduction {
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: large;
 }
