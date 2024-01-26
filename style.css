@@ -140,7 +140,9 @@ h2 {
 }
 main {
     padding-top: 5px;
-    margin: 0 auto;
+    margin: auto;
+    padding-right: 80px;
+    padding-left: 20px;
   }
 .introduction {
   padding-left: 2rem;
@@ -182,7 +184,7 @@ main {
     padding-left: 8%;
     display: flex;
     flex-wrap: wrap;
-    gap: .5rem;
+    gap: 1rem;
     /* gap: 1rem; */
 }
 #app-info span, #self-intro span {
