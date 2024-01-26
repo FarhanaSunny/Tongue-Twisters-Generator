@@ -3,7 +3,7 @@ const animatedP = document.getElementById("app-info");
 animatedText.split(" ").forEach((item, i) => {
   const element = document.createElement("span");
   // element.style.animationDelay = `${i * 0.2}s`; // Use "s" for seconds in animation-delay
-  element.style.opacity=5;
+  element.style.opacity=2;
   element.style.animation = `fadeIn 2s cubic-bezier(0.42, 0, 0.58, 1) ${i * 0.1}s`;
   element.textContent = item + " ";
   animatedP.appendChild(element);
