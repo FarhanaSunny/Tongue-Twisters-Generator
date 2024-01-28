@@ -228,6 +228,8 @@ main {
     box-shadow: 0 4px 8px rgba(71, 32, 76, 0.1);
     width: 150px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
 .twister-box:hover {
     background-color: #fef9c3;
@@ -237,8 +239,17 @@ main {
     position: relative;
     bottom: 0;
     display: block;
-    margin-top: 2rem;
+    /* margin-bottom: 2rem;  */
   }  
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    /* align-self: flex-end; */
+    margin-top: auto;
+    margin-left: auto;
+
+  }
 .twister-container {
     position: relative;
   }

@@ -144,15 +144,19 @@ function getTwisterElement(language,difficulty) {
     textElement.textContent = obj.text;
     newDiv.appendChild(textElement);
 
+    const controlsDiv = document.createElement('div');
+    controlsDiv.classList.add("controls");
+    
+
     const languageElement = document.createElement('p');
     languageElement.textContent= obj.language;
     languageElement.classList.add("languageStyle")
-    newDiv.appendChild(languageElement);
+    controlsDiv.appendChild(languageElement);
     
     const difficultyElement = document.createElement('p');
     difficultyElement.textContent= obj.difficulty;
     difficultyElement.classList.add("difficultyStyle")
-    newDiv.appendChild(difficultyElement);
+    controlsDiv.appendChild(difficultyElement);
     
     const buttonElement= document.createElement('button');
     const imgElement = document.createElement('img');
@@ -160,7 +164,8 @@ function getTwisterElement(language,difficulty) {
     buttonElement.appendChild(imgElement);
     buttonElement.addEventListener("click", () => playMusic(obj.audio));
 
-    newDiv.appendChild(buttonElement);
+    controlsDiv.appendChild(buttonElement);
+    newDiv.appendChild(controlsDiv);
 
     currentDiv.appendChild(newDiv);
   });
