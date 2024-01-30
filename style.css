@@ -36,6 +36,7 @@ body {
     color: #454569;
     font-family: Helvetica;
     margin: 0;
+    padding-bottom: 100px;
   }
 header {
     width: 100%;
@@ -253,12 +254,7 @@ main {
 .twister-container {
     position: relative;
   }
-.click {
-    margin: 0 auto;
-    padding-left: 5rem;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-  }
+
 #intro-text{
   font-family: "Montserrat Medium";
 }
@@ -266,4 +262,25 @@ main {
   max-width: 500px;
   margin: 0 auto;
   font-size: large;
+}
+.click {
+  margin: 0 auto;
+  padding-left: 5rem;
+  padding-bottom: 4rem;
+  /* padding-top: 2rem; */
+}
+.click-button {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #7dd3fc; 
+  color: white; 
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.click-button:hover {
+  background-color: #0ea5e9; 
 }
