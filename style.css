@@ -5,7 +5,7 @@
 }
 @media (max-width: 400px) {
   .background-img {
-      max-width: 400px; /* Set to 100% on smaller screens */
+      max-width: 400px; 
   }
 }
 @keyframes scale {
@@ -265,7 +265,7 @@ main {
 }
 .click {
   margin: 0 auto;
-  padding-left: 5rem;
+  padding-left: 6rem;
   padding-bottom: 4rem;
   /* padding-top: 2rem; */
 }
