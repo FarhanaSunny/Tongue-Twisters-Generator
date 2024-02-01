@@ -28,7 +28,7 @@
       transform: translateX(0); 
     }
     to {
-      transform: translateX(130px); 
+      transform: translateX(100px); 
     }
   }
 body {
