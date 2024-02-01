@@ -52,7 +52,7 @@ header {
     box-shadow: 0 5px 10px #4a044e;
 }  
 #logo {
-  max-width: 100px;
+  max-width: 80px;
   height: auto;
   position: relative; 
   /* padding-left: 10px; */
