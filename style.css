@@ -163,7 +163,7 @@ main {
   padding-left: 2rem;
 }
 .about-the-app {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
 .languageStyle, .difficultyStyle  {
     border-radius: 1rem;
@@ -200,7 +200,7 @@ main {
     padding-left: 8%;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2.5rem;
     /* gap: 1rem; */
 }
 #app-info span, #self-intro span {
@@ -220,13 +220,13 @@ main {
     animation-delay: 1s;
   } */
 .twister-box {
-    border: 2px solid #a178a6;
+    /* border: 2px solid #a178a6; */
     border-radius: 20px;
     padding: 10px;
     margin-bottom: 10px;
     position: relative;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(71, 32, 76, 0.1);
+    box-shadow: 6px 8px 10px 15px rgba(71, 32, 76, 0.1);
     width: 150px;
     margin: 0 auto;
     display: flex;
@@ -265,7 +265,7 @@ main {
 }
 .click {
   margin: 0 auto;
-  padding-left: 6rem;
+  padding-left: 1rem;
   padding-bottom: 4rem;
   /* padding-top: 2rem; */
 }
@@ -277,8 +277,9 @@ main {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
+  width: 150px;
 }
 
 .click-button:hover {
