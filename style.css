@@ -197,7 +197,7 @@ main {
   box-shadow: 0 5px 10px #4a044e;
 }
 .twister-list {
-    padding-left: 8%;
+    padding: 70px 0;
     display: flex;
     flex-wrap: wrap;
     gap: 3rem 3em;
@@ -299,4 +299,16 @@ select {
   border-radius: 1rem;
   color: #000;
   cursor: pointer;
+}
+p {
+  /* padding: 70px 0; */
+  /* text-align: center;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle; */
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
