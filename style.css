@@ -317,3 +317,26 @@ p1 {
   width: 100px; /* Set the desired width for the container */
   word-wrap: break-word; 
  }
+ 
+ .home-link {
+  position: relative;
+  text-decoration: none;
+  color: black; /* Adjust the color as needed */
+  /* padding: 8px; /* Add padding for better visual */
+  /* background-color: #f0f0f0; /* Optional background color */
+  /* display: inline-block;  */
+ } 
+ .connect-link { 
+    /* display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center; */
+    display: inline-block;
+    background-color: #7dd3fc; 
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-right: 2rem;;
+ }
+      
+ 
