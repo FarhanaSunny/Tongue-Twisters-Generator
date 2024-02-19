@@ -157,7 +157,7 @@ main {
     padding-top: 5px;
     margin: auto;
     padding-right: 80px;
-    padding-left: 20px;
+    padding-left: 80px;
   }
 .introduction {
   padding-left: 2rem;
@@ -255,6 +255,7 @@ main {
     /* align-self: flex-end; */
     margin-top: auto;
     margin-left: auto;
+    padding-right: 50px;
 
   }
 .twister-container {
@@ -291,7 +292,6 @@ main {
 .click-button:hover {
   background-color: #0ea5e9; 
 }
-
 select {
   font-size: 1rem;
   padding: 0.5em 3em 0.5em 1em;
@@ -307,3 +307,13 @@ p {
   display: inline-block;
   vertical-align: middle;
 }
+p1 {
+  text-align: center;
+  line-height: 1.5;
+  display: inline-block;
+  /* vertical-align: middle; */
+  padding-top: 50px;
+  padding-left: 80px;
+  width: 100px; /* Set the desired width for the container */
+  word-wrap: break-word; 
+ }

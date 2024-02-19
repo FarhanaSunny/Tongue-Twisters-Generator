@@ -140,7 +140,7 @@ function getTwisterElement(language,difficulty) {
     const newDiv = document.createElement('div');
     newDiv.classList.add("twister-box");
 
-    const textElement = document.createElement('p');
+    const textElement = document.createElement('p1');
     textElement.textContent = obj.text;
     newDiv.appendChild(textElement);
 
@@ -148,12 +148,12 @@ function getTwisterElement(language,difficulty) {
     controlsDiv.classList.add("controls");
     
 
-    const languageElement = document.createElement('p');
+    const languageElement = document.createElement('p2');
     languageElement.textContent= obj.language;
     languageElement.classList.add("languageStyle")
     controlsDiv.appendChild(languageElement);
     
-    const difficultyElement = document.createElement('p');
+    const difficultyElement = document.createElement('p2');
     difficultyElement.textContent= obj.difficulty;
     difficultyElement.classList.add("difficultyStyle")
     controlsDiv.appendChild(difficultyElement);
