@@ -159,9 +159,11 @@ function getTwisterElement(language,difficulty) {
     controlsDiv.appendChild(difficultyElement);
     
     const buttonElement= document.createElement('button');
-    const imgElement = document.createElement('img');
-    imgElement.src = './play_icon.png';
-    buttonElement.appendChild(imgElement);
+    buttonElement.textContent = "Play"
+    buttonElement.classList.add("play-button");
+    // const imgElement = document.createElement('img');
+    // imgElement.src = './play_icon.png';
+    // buttonElement.appendChild(imgElement);
     buttonElement.addEventListener("click", () => playMusic(obj.audio));
 
     controlsDiv.appendChild(buttonElement);
