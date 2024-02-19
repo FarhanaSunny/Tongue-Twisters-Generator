@@ -334,9 +334,12 @@ p1 {
     display: inline-block;
     background-color: #7dd3fc; 
     font-size: 16px;
-    border-radius: 10px;
+    border-radius: 50px;
     cursor: pointer;
     padding-right: 2rem;;
  }
-      
+  
+ .connect-link:hover {
+  background-color: #0ea5e9;
+ }
  
