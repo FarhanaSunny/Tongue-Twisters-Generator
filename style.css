@@ -228,8 +228,8 @@ main {
     position: relative;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 6px 8px 10px 15px rgba(71, 32, 76, 0.1);
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -300,20 +300,19 @@ select {
   color: #000;
   cursor: pointer;
 }
-p {
+/* p {
   /* padding: 70px 0; */
-  text-align: center;
+  /* text-align: center;
   line-height: 1.5;
   display: inline-block;
-  vertical-align: middle;
-}
+  vertical-align: middle; */
 p1 {
   text-align: center;
   line-height: 1.5;
   display: inline-block;
   /* vertical-align: middle; */
-  padding-top: 50px;
-  padding-left: 80px;
+  padding-top: 25px;
+  padding-left: 50px;
   width: 100px; /* Set the desired width for the container */
   word-wrap: break-word; 
  }
@@ -356,7 +355,7 @@ p1 {
  }
 
  .play-button:hover {
-  background-color: #4ade80; 
+  background-color: ; 
 }
 
  
