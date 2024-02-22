@@ -155,9 +155,9 @@ h2 {
 }
 main {
     padding-top: 5px;
-    margin: auto;
-    padding-right: 80px;
-    padding-left: 80px;
+    margin: 0 auto;
+    padding-right: 100px;
+    padding-left: 50px;
   }
 .introduction {
   padding-left: 2rem;
@@ -195,6 +195,7 @@ main {
   z-index: 1;
   font-size: large;
   box-shadow: 0 5px 10px #4a044e;
+  margin: 0 auto;
 }
 .twister-list {
     padding: 70px 0;
@@ -255,7 +256,7 @@ main {
     /* align-self: flex-end; */
     margin-top: auto;
     margin-left: auto;
-    padding-right: 50px;
+    padding-right: 25px;
 
   }
 .twister-container {
@@ -324,19 +325,34 @@ p1 {
   /* padding: 8px; /* Add padding for better visual */
   /* background-color: #f0f0f0; /* Optional background color */
   /* display: inline-block;  */
+
  } 
  .connect-link { 
     /* display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center; */
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
+    align-items: center; 
+    position: relative;
+    /* width: 100px;
+    max-width: 100px; */
+    /* height: 50px; */
+    margin-left: auto; 
+    margin-right: auto;
     background-color: #7dd3fc; 
-    font-size: 16px;
-    border-radius: 50px;
+    font-size: medium;
+    border-radius: 25px;
     cursor: pointer;
     padding-right: 2rem;;
  }
+.nav-link {
+  display: inline-block;
+  /* align-items: center;  */
+  padding-top: 1rem;
+  padding-right: 6rem;
+}
   
  .connect-link:hover {
   background-color: #0ea5e9;
@@ -345,7 +361,7 @@ p1 {
  .play-button {
   display: inline-block;
   padding: 5px 10px;
-  background-color: #86efac; 
+  background-color: #84cc16; 
   text-align: center;
   font-size: 16px;
   border-radius: 30px;
@@ -355,7 +371,7 @@ p1 {
  }
 
  .play-button:hover {
-  background-color: ; 
+  background-color: #22c55e; 
 }
 
  
