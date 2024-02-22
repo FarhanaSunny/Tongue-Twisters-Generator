@@ -300,7 +300,13 @@ select {
   border-radius: 1rem;
   color: #000;
   cursor: pointer;
+  /* box-shadow: 0 2px 2px  #38bdf8; */
 }
+ select:hover {
+   /* box-shadow: 0 2px 2px  #38bdf8; */
+  background-color: #7dd3fc;
+  box-shadow: 0 0 10px #0ea5e9cc;
+ }
 /* p {
   /* padding: 70px 0; */
   /* text-align: center;
