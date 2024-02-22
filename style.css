@@ -85,6 +85,7 @@ header {
     justify-content: center;
     overflow: hidden;
     padding-top: 2rem;
+    padding-right: 2rem;
     transition: transform 0.5s ease-in-out;
     animation-fill-mode: forwards;
     animation-delay: 1s;
