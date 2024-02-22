@@ -157,8 +157,8 @@ h2 {
 main {
     padding-top: 5px;
     margin: auto;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 80px;
+    padding-left: 80px;
   }
 .introduction {
   padding-left: 2rem;
@@ -229,7 +229,7 @@ main {
     margin-bottom: 10px;
     position: relative;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 6px 8px 10px 15px rgba(71, 32, 76, 0.1);
+    box-shadow: 6px 8px 10px 15px #47204c1a;
     width: 200px;
     height: 200px;
     margin: 0 auto;
