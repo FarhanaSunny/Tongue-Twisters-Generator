@@ -3,8 +3,8 @@ This is a fun and a very user friendly app. It can used by any age group , wheth
 
 <b>---Please make sure to click on the Play button in the twister cards, you will be pleasantly surprised to hear the sweet voice of my 5 years old daughter's voice😉❤️---</b>
 
-![Screenshot of Kaboom Beach gameplay])
-![Screenshot of Kaboom Beach gameplay])
+![Screenshot of the app])
+![Screenshot of the app])
 # Motivation:
 # Description: 
 # Acknowledgements:
