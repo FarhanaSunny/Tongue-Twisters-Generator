@@ -4,6 +4,8 @@
 
 <b>---Please make sure to click on the Play button in the twister cards, you will be pleasantly surprised to hear the sweet voice of my 5 years old daughter's voice😉❤️---</b>
 
+https://farhanasunny.github.io/Tongue-Twisters-Generator/
+
 ![Screenshot of the app](https://github.com/FarhanaSunny/Tongue-Twisters-Generator/blob/main/screenshots/sc2.jpeg)
 ![Screenshot of the app](https://github.com/FarhanaSunny/Tongue-Twisters-Generator/blob/main/screenshots/sc%201.jpeg)
 
