@@ -6,5 +6,9 @@ This is a fun and a very user friendly app. It can used by any age group , wheth
 ![Screenshot of the app](https://github.com/FarhanaSunny/Tongue-Twisters-Generator/blob/main/screenshots/sc2.jpeg)
 ![Screenshot of the app](https://github.com/FarhanaSunny/Tongue-Twisters-Generator/blob/main/screenshots/sc%201.jpeg)
 # Motivation:
+When I was told to make my first app for GetCoding, honestly it felt intimidating!! As I have only worked with html and CSS before . So I started this project using mostly JavaScript. All the tongue twisters of the app coming from javaScript made this app so easy to manoeuvre, for examples I can add as many tongue twisters as I want in future. As all the templates has been set already using 'Foreach loop, appendchilds, eventlistners' etc. Overall it was very engaging learning curve for me ✌🏼
+
+The inspiration behind crreating this particular app definitely comes from my daughter , as I wanted to create something for her. Adding her sweet voices saying all these non native languages surly made this app extra special 👩‍👧❤️❤️
+
 # Description: 
 # Acknowledgements:
