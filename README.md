@@ -6,6 +6,10 @@
 
 https://farhanasunny.github.io/Tongue-Twisters-Generator/
 
+<b>---Please Checkout my Live Demo of the app---</b>
+
+https://www.loom.com/share/8a21f79ba70d44e1a15767b59a080166
+
 ![Screenshot of the app](https://github.com/FarhanaSunny/Tongue-Twisters-Generator/blob/main/screenshots/sc2.jpeg)
 ![Screenshot of the app](https://github.com/FarhanaSunny/Tongue-Twisters-Generator/blob/main/screenshots/sc%201.jpeg)
 
